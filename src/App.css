@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+#root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://i.pinimg.com/564x/a8/bf/a5/a8bfa5a3f805c2d70a0b6d990c16aea4.jpg") no-repeat;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+    border-radius: 20px;
+    width: 800px;
+    min-height: 600px;
+    padding: 20px;
+    background-color: rgba(6, 33, 93, 0.5);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.music audio {
+    width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+.playerBlock {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.closeBtn{
+    border-radius: 10px;
+    background-color: #83acfa;
+    padding: 10px;
+    margin: 1px 10px;
+}
+.dropdown {
+    border-radius: 10px;
+    background-color: #83acfa;
+    padding: 10px;
+    margin: 1px 10px;
+}
+.url {
+    border-radius: 10px;
+    background-color: #83acfa;
+    padding: 10px;
+    margin: 1px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categoriesBlock {
+    text-align: center;
+    color: #07174d;
+}
+
+.gamePoster {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.gamePosters {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    align-items: center;
+}
+
+.gamePosters button {
+    border-radius: 50px;
+    padding: 30px;
+    background-color: #83acfa;
 }
